@@ -6,101 +6,218 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <meta name="google-site-verification" content="Sgm8UNZdfaygU3gzTI-pLdXJlkpY30Rg9vvi_wP6a4U" />
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXP3CM831B"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXP3CM831B"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-XXP3CM831B');
-</script>
-<!-- Messenger Chat Plugin Code -->
-<div id="fb-root"></div>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
-<!-- Your Chat Plugin code -->
-<div id="fb-customer-chat" class="fb-customerchat">
-</div>
+        gtag('config', 'G-XXP3CM831B');
+    </script>
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
 
-<script>
-  var chatbox = document.getElementById('fb-customer-chat');
-  chatbox.setAttribute("page_id", "107654771903775");
-  chatbox.setAttribute("attribution", "biz_inbox");
-</script>
-
-<!-- Your SDK code -->
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      xfbml            : true,
-      version          : 'v13.0'
-    });
-  };
-
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-</script>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="menu">
-        <ul id="left">
-            <li> <a href="#">Brand</a></li>
-            <li> <a href="#">Browse</a></li>
-
-        </ul>
-        <ul id="right">
-            <li> <a href="register.htm">Sign Up</a> </li>
-            <li> <a href="login.htm">Log In</a> </li>
-            <li> <a href="#">Help</a> </li>
-        </ul>
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
     </div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "107654771903775");
+        chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v13.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body >
+  <div class="container" style="background-image: linear-gradient(to right,lightblue,pink);">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="javascript:void(0)">Du lịch Quảng Ngãi</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <li class="nav-item">
+                  <a class="nav-link" href="news.html">News</a>
+                </li>
+                <a class="nav-link" href="login.htm">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="register.htm">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.htm">About</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search">
+              <button class="btn btn-primary" type="button">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+  
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img height="700px" width="1000px" src="https://khongsolac.com/wp-content/uploads/2019/10/dia-diem-du-lich-quang-ngai-25.jpg" alt="Du lịch quảng ngãi" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img height="700px" width="1000px"src="https://media.truyenhinhdulich.vn/upload/news/3202_quang_ngai_khai_thac_loi_the_tu_du_lich_cong_dong_06153806032019.jpg" alt="Du lịch quảng ngãi" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img height="700px" width="1000px"src="https://cdn3.ivivu.com/2016/11/du-lich-quang-ngai-ivivu-2.jpg" alt="Du lịch quảng ngãi" class="d-block w-100">
+      </div>
+    </div>
+  
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  
     <div id="panner">
         <div id="text">
-            <h1>Find a place to stay.</h1>
-            <p>Rent from people in over 34,000 cities and 192 countries</p>
+            <h1>Quảng Ngãi và con người.</h1>
+            <p>Nơi thiên nhiên lắng đọng cùng thời gian</p>
         </div>
-        <img id="img-panner" src=" https://s3.amazonaws.com/codecademy-content/courses/ltp/img/lodging.png" alt="">
+        <img id="img-panner" src=" https://topquangngai.vn/wp-content/uploads/2021/09/canh-dep-quang-ngai-nhin-tu-tren-cao-Cau-Tre-Xom-Lan-Quang-Ngai-VnExpress_1562727563_VnEx.jpg" alt="">
     </div>
     <div id="body">
-        <h2>Neighborhood Guides</h2>
-        <p>Not sure where to stay? We've created neighborhood guides for cities all around the word.</p>
+        <h2>Địa điểm du lịch nổi bật</h2>
+        <p>Đây là một trong số những địa chỉ bạn nên ghé thăm một lần nếu có dịp đến Quảng Ngãi.</p>
         <div id="row1">
-            <img width="360px" src="https://s3.amazonaws.com/codecademy-content/courses/ltp/img/mexico-city.png"
+            <img width="360px" src="https://nld.mediacdn.vn/2020/6/11/3-159184892001785313399.jpg"
                 alt=""><br><br>
-            <img width="360px" src="https://s3.amazonaws.com/codecademy-content/courses/ltp/img/ny.png" alt=""><br>
+            <img width="360px" src="https://vivulyson.com/uploads/images/blog/xem-an-choi/35/Top-5-diem-den-du-lich-Quang-Ngai-nhat-dinh-phai-den-mot-lan-02.jpg" alt=""><br>
         </div>
         <div id="row2">
-            <img width="360px" src="https://s3.amazonaws.com/codecademy-content/courses/ltp/img/tokyo.png" alt=""><br><br>
-            <img width="360px" src="https://s3.amazonaws.com/codecademy-content/courses/ltp/img/paris.png" alt=""><br>
+            <img width="360px" src="https://top10quangngai.vn/wp-content/uploads/2021/06/danh-lam-thang-canh-quang-ngai-3_optimized.jpg"
+                alt=""><br><br>
+            <img width="360px" src="https://vivulyson.com/uploads/images/blog/vi-vu/dia-diem-du-lich-quang-ngai18.jpg" alt=""><br>
         </div>
         <div id="row3">
-            <img width="360px" src="https://s3.amazonaws.com/codecademy-content/courses/ltp/img/invite.png" alt="">
+            <img width="400px" height="450px" src="https://www.chudu24.com/wp-content/uploads/2017/09/4-86.jpg" alt="">
+        </div>
+       
+    </div>
+      <div class="px-4 px-lg-5 mt-3 bg-light">
+          <!-- Featured Project Row-->
+          <div class="d-flex mt-3">
+                  <img width="720px" height="310px"  src="https://tranhtreotuonghanoi.com/wp-content/uploads/2020/06/cac-mau-tranh-phong-canh-dep-que-huong-quang-ngai.jpg" alt="..." />
+                  <div class="text-center text-lg-left">
+                      <h4>Cảnh biển</h4>
+                      <p class="text-black-50 mb-0">Nhắc tới Quảng Ngãi, du khách có thể nhớ ngay tới bãi biển Mỹ Khê, Sa Cần, Dung Quất… đẹp như tranh hay biển đảo Lý Sơn với những bãi đá macma đen mang nét đẹp hùng vĩ như một bức thủy mặc. Dường như thiên nhiên đã có một sự ưu ái lớn hơn cho mảnh đất này. Ở nơi đây không chỉ có một hay hai bãi biển đẹp, mà trải dọc khắp theo đường bờ biển, du khách còn có thể khám phá ra những vùng biển khác, đẹp theo một cách hoang sơ mà phóng khoáng.</p>
+                  </div>
+          </div>
+          <div class="d-flex mt-3">
+            <div class="text-center text-lg-left">
+              <h4>Khu du lịch thác trắng</h4>
+              <p class="text-black-50 mb-0">Khu du lịch thác Trắng thuộc huyện Minh Long và cách thành phố Quảng Ngãi tầm hơn 20km. Khung cảnh ở đây thực sự ấn tượng bởi rừng núi hoang sơ, trong lành, dòng thác đổ xuống giữa khung cảnh bao quanh là biết bao cây cối, sông suối tung bọt trắng xóa. Đến Quảng Ngãi, bạn đừng bỏ qua nơi đây bởi bạn sẽ có ngay những bức ảnh sống ảo với view đẹp quên sầu ngay tại đây.
+
+              </p>
+            </div>
+            <img  width="720px" height="310px"  src="https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2017/09/thac-minh-long.jpg" alt="..." />
+          </div>
+          <div class="d-flex mt-3">
+                  <img  width="720px" height="310px"  src="https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2017/11/ly-son-2-e1509706909494.jpg" alt="..." />
+                  <div class="text-center text-lg-left">
+                      <h4>Khu bào tồn thiên nhiên Kon Chư Răng</h4>
+                      <p class="text-black-50 mb-0">Điểm du lịch Quảng Ngãi Kon Chư Răng là khu bảo tồn thiên nhiên thuộc đia phận tỉnh Gia Lai và một phần nằm ở tỉnh Quảng Ngãi. Nơi đây đích thực là thiên đường cho những ai ham mê trekking bởi những khu rừng ở đây rất lý tưởng nhờ vào hệ sinh thái chuyển tiếp giữa vùng Đông và Tây của dãy Trường Sơn.</p>
+                  </div>
+          </div>
+          
+      </div>
+    <div  id="footer ">
+        <div class="card">
+            <img class="w-100 " height="300px" src="https://gotour.com.vn/wp-content/uploads/2021/04/Ganh-Yen-Binh-Son.jpg">
+    
+            <div class="d-flex card-img-overlay " style="background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7));height: inherit;width:100%;margin-left: 1px;">
+                <div class="mx-4" style="color: aliceblue;">
+                    <h5>DESCRIPTION</h5>
+                    <hr size="3px" color="white">
+                    <p style="color: aliceblue;">Hiếm ai biết được, Quảng Ngãi sở hữu 
+                        những khung cảnh đẹp khó nơi nào sánh được. Tuy nhiên, vùng đất này chưa quá 
+                        nổi trội trong định vị của các tín đồ du lịch. Tuy nhiên, đừng quá lo lắng bởi 
+                        Traveloka đã tổng hợp những kinh nghiệm du lịch Quảng Ngãi đầy đủ, thực tế bạn tham khảo. Điểm qua sơ lược,
+                         Quảng Ngãi chính là “thánh địa du lịch" tiềm năng vớinhiều yếu tố hấp dẫn các tín đồ mê khám phá.
+                    </p>
+                </div>
+    
+                <div class="mx-4 " style="color: aliceblue;">
+                    <h5>OPENING HOURS</h5>
+                    <hr size="3px" color="white">
+                    <p style="color: aliceblue;"><span class="text-color">Monday: </span>Closed</p>
+                    <p style="color: aliceblue;"><span class="text-color">Tue-Wed :</span> 9:Am - 10PM</p>
+                    <p style="color: aliceblue;"><span class="text-color">Thu-Fri :</span> 9:Am - 10PM</p>
+                    <p style="color: aliceblue;"><span class="text-color">Sat-Sun :</span> 5:PM - 10PM</p>
+                </div>
+                
+    
+                <div class="mx-4 " style="color: aliceblue;">
+                    <h5>CONTACT</h5>
+                    <hr size="3px" color="white">
+    
+                    <div>
+                        <i class="fas fa-home mb-2"></i>
+                        183/23 Quốc lộ 1K,<br>tp Quảng Ngãi, Quảng Ngãi
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.0559644187097!2d106.76812301462361!3d10.883348092249054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d862ab519f51%3A0xc097ba6ae9a81d67!2zMTgzIFF14buRYyBs4buZIDFLLCBMaW5oIFh1w6JuLCBUaOG7pyDEkOG7qWMsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1625977697337!5m2!1sen!2s" width="250" height="100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <br>
+                    <div>
+                        <i class="fas fa-envelope mt-2"></i>
+                        abc@gmail.com
+                    </div>
+                    <br>
+                </div>
+    
+               
+            </div>
         </div>
     </div>
-    <div id="footer" class="row">
-        <div id="footer1">
-            <h4>Travel</h4>
-            <p>From apartment and rooms to treehouse and boats: stay in unique space in 192 countries</p>
-            <a href="#">See how to travel on Airbnb</a>
-        </div>
-        <div id="footer2">
-            <h4>Host</h4>
-            <p>Renting out your unused space could pay your bills or  fund your next vacation.</p>
-            <a href="#">Learn more about hosting</a>
-        </div>
-        <div id="footer3" >
-            <h4>Trust and Safety</h4>
-            <p>From Verified ID to our worldwide customer support team, we've got your back.</p>
-            <a href="#">Lear about trust at Airbnb</a>
-        </div>
-    </div>
+  </div>
 </body>
 
 </html>
